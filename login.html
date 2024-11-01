@@ -30,9 +30,9 @@
           </a>
           
         </div>
-        <div class="header-btns">
+        <!-- <div class="header-btns">
           <a href="select-ticket.html"><button class="primary-btn"><span class="text">Book Now</span><span>Book Now</span></button></a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -163,96 +163,6 @@
   </script>
 
 
-<script>
-  $('#premium-partners').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    autoplaySpeed: 800,
-    smartSpeed: 800,
-    dots: false,
-    responsive: {
-      400: {
-        items: 1
-      },
-      500: {
-        items: 1
-      },
-      700: {
-        items: 2
-      },
-      900: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      },
-      1200: {
-        items: 6
-      }
-    }
-  });
-</script>
-
-<script>
-  $('#associate-partners').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    rtl:true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    autoplaySpeed: 800,
-    smartSpeed: 800,
-    dots: false,
-    responsive: {
-      400: {
-        items: 1
-      },
-      500: {
-        items: 1
-      },
-      700: {
-        items: 2
-      },
-      900: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      },
-      1200: {
-        items: 6
-      }
-    }
-  });
-</script>
-
-
-<script>
-document.querySelectorAll('.plus-minus').forEach(counter => {
-  const minusBtn = counter.querySelector('.minus-btn');
-  const plusBtn = counter.querySelector('.plus-btn');
-  const countSpan = counter.querySelector('.count');
-
-  // Initial count value
-  let count = 0;
-
-  minusBtn.addEventListener('click', () => {
-    count--;
-    countSpan.textContent = count;
-  });
-
-  plusBtn.addEventListener('click', () => {
-    count++;
-    countSpan.textContent = count;
-  });
-});
-</script>
 
 
 </body>

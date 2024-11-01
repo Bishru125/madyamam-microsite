@@ -66,9 +66,9 @@ img {
 	padding-top: 20px;
 }
 
-.header .logo {
+/* .header .logo {
 	width: 50%;
-}
+} */
 
 
 .header .logo img {
@@ -590,9 +590,6 @@ img {
 	width: 100%;
 	padding: 5px;
 }
-
-
-
 
 .vip-box-img {
 	height: 470px;
@@ -1938,8 +1935,12 @@ img {
 }
 
 @media only screen and (max-width: 991px) {
-	.gradient-text {
-        font-size: 38px;
+	.banner .gradient-text {
+        font-size: 30px;
+		width: 90%;
+    }
+	.gradient-text br{
+        display: none;
     }
 	.banner-text p{
 		margin: 15px 0px;
@@ -1969,6 +1970,7 @@ img {
 	}
 	.banner-content{
 		top: 55%;
+		width: auto;
 	}
 	
 	.terms-div{
@@ -1979,6 +1981,24 @@ img {
 	}
 	.old-events-img-box{
 		height: 270px;
+	}
+	.banner-btns{
+		display: none;
+	}
+	.header .logo{
+		width: 100%;
+	}
+
+	.partner-head{
+		width: 100% !important;
+	}
+	.header .logo img{
+		width: 230px;
+		display: block;
+		margin: auto;
+	}
+	.green-bg, .red-bg, .pink-bg, .blue-bg{
+		animation: none;
 	}
 }
 
@@ -2012,7 +2032,7 @@ img {
 		height: 400px;
 	}
 	.harmounios-img {
-		height: 340px;
+		height: 330px;
 	}
 	.media-img img {
 		width: 120px;
@@ -2071,17 +2091,21 @@ img {
 	.partner-slider {
 		padding: 20px 0px;
 	}
-	.banner-img{
-		display: none;
+	.counter-cntnt span{
+		font-size: 40px;
+	}
+	.rectangle-box{
+		height: 100px;
+		width: 100px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	.countdoun-main{
-		gap: 20px;
+		gap: 10px;
 	}
 	.counter-wrapper{
-		padding: 30px;
+		padding: 30px 15px;
 	}
 	.custom-container {
         padding: 0px 30px;
@@ -2117,26 +2141,30 @@ img {
 	.inner-banner-content {
 		margin-top: 50px;
 	}
-	.banner {
-		height: 80vh;
-	}
 	.banner-data{
 		margin: 10px 0px;
 	}
 	.marquee span {
-        font-size: 60px;
+        font-size: 40px;
     }
 	.footer h6 br{
 		display: none;
 	}
+	.counter-cntnt div{
+		font-size: 15px;
+	}
+	.harmonios-main {
+        padding: 60px 0px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
 	.counter-cntnt span{
-		font-size: 40px;
+		font-size: 25px;
 	}
 	.rectangle-box{
-		height: 115px;
+		height: 70px;
+		width: 70px;
 	}
 	.gradient-text {
         font-size: 30px;
@@ -2183,14 +2211,23 @@ img {
 }
 
 @media only screen and (max-width: 375px) {
-	.rectangle-box{
-		width: 115px;
-	}
-	
+	.banner-img {
+        width: 220px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
 	.gradient-text {
         font-size: 29px;
+    }
+	.counter-cntnt span {
+        font-size: 20px;
+    }
+	.rectangle-box {
+        height: 65px;
+        width: 65px;
+    }
+	.counter-cntnt div {
+        font-size: 14px;
     }
 }
