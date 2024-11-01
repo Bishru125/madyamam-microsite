@@ -25,11 +25,16 @@
     <div class="custom-container">
       <div class="header">
         <div class="logo">
-          <img src="assets/img/logo.png" alt="">
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          
         </div>
         <div class="header-btns">
           <a href="select-ticket.html"><button class="primary-btn"><span class="text">Book Now</span><span>Book Now</span></button></a>
-          <button class="secondary-btn">View Ticket<i class="fas fa-arrow-right"></i></button>
+          <a href="login.html">
+            <button class="secondary-btn">View Ticket<i class="fas fa-arrow-right"></i></button>
+          </a>
         </div>
       </div>
     </div>
@@ -53,7 +58,7 @@
 </div>
 
 
-<section class="sub-wrapper-main">
+<section class="sub-wrapper-main" data-aos="fade-up" data-aos-duration="1500">
 <div class="sub-wrapper">
     <img src="assets/img/woohoo-img.png" alt="">
     <h4>Woo hoo!!</h4>
@@ -65,13 +70,15 @@
         <h5>You can update your registration by using your Email ID </h5>
         <h5>We look forward to welcoming you to Harmonious Kerala Dammam.</h5>
        
-        <button class="secondary-btn">View Ticket</button>
+        <a href="index.html">
+          <button class="secondary-btn">Close</button>
+        </a>
     </div>
 </div>
 
 </section>
 
-<section class="premium-partners">
+<section class="premium-partners" data-aos="fade-up" data-aos-duration="1500">
   <h4 class="partner-head gradient-text">
     PREMIUM PARTNERS
   </h4>
@@ -114,7 +121,7 @@
 
 </section>
 
-<section class="premium-partners">
+<section class="premium-partners" data-aos="fade-up" data-aos-duration="1500">
 <h4 class="partner-head gradient-text">
 ASSOCIATE PARTNERS
 </h4>
@@ -157,7 +164,7 @@ ASSOCIATE PARTNERS
 
 </section>
 
-<section class="premium-partners">
+<section class="premium-partners" data-aos="fade-up" data-aos-duration="1500">
 <h4 class="partner-head gradient-text">
 REGISTRATION PARTNER                                 
 </h4>
@@ -175,7 +182,7 @@ REGISTRATION PARTNER
 
 
   <section class="footer">
-    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy text ever </h6>
+    <h6>Embrace the rhythm of harmony, fueled by excitement and joy, <br> Harmonious Kerala is here! Get ready for an unforgettable event!</h6>
     <div class="social-icons">
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-x-twitter"></i>
@@ -196,7 +203,7 @@ REGISTRATION PARTNER
     
     <div class="terms-div">
       <ul>
-        <li><a href="">© 2024 Welcome. All right reserved.</a></li>
+        <li><a href="">© 2024 Harmonious Kerala. All right reserved.</a></li>
         <li><a href="">Privacy Policy</a></li>
         <li><a href="">Terms of Service</a></li>
       </ul>
@@ -266,6 +273,9 @@ REGISTRATION PARTNER
     smartSpeed: 800,
     dots: false,
     responsive: {
+      300: {
+        items: 1
+      },
       400: {
         items: 1
       },
@@ -301,6 +311,9 @@ REGISTRATION PARTNER
     smartSpeed: 800,
     dots: false,
     responsive: {
+      300: {
+        items: 1
+      },
       400: {
         items: 1
       },
