@@ -577,7 +577,8 @@ img {
 
 .vip-section {
 	background-image: url(../img/vip-bg.png);
-	background-size: 100%;
+	background-size: cover;
+	height: 100%;
 	background-position: center;
 	padding: 60px 0px 120px 0px;
 	background-attachment: fixed;
@@ -1942,9 +1943,10 @@ img {
     }
 	.banner-text p{
 		margin: 15px 0px;
+		width: 90%;
 	}
 	.banner-img {
-        width: 360px;
+        width: 320px;
     }
 	
 	.media-img {
@@ -1968,11 +1970,15 @@ img {
 	.banner-content{
 		top: 55%;
 	}
-	.banner-img{
-		display: none;
-	}
+	
 	.terms-div{
 		text-align: center;
+	}
+	.banner-data{
+		margin: 10px 0px;
+	}
+	.old-events-img-box{
+		height: 270px;
 	}
 }
 
@@ -2065,6 +2071,9 @@ img {
 	.partner-slider {
 		padding: 20px 0px;
 	}
+	.banner-img{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -2110,6 +2119,15 @@ img {
 	}
 	.banner {
 		height: 80vh;
+	}
+	.banner-data{
+		margin: 10px 0px;
+	}
+	.marquee span {
+        font-size: 60px;
+    }
+	.footer h6 br{
+		display: none;
 	}
 }
 
@@ -2169,4 +2187,10 @@ img {
 		width: 115px;
 	}
 	
+}
+
+@media only screen and (max-width: 350px) {
+	.gradient-text {
+        font-size: 29px;
+    }
 }
