@@ -931,6 +931,14 @@ img {
 	transition: 1s;
 }
 
+.footer-cont-number{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
 /* footer */
 
 
@@ -1808,7 +1816,14 @@ img {
 		outline: none !important;
 		box-shadow: none !important;
 		
+	}
+
+	#subnav {
+		background-color: #000;
+		float: left;
+		left: 0;
 	  }
+	  
 
 
 
@@ -2191,6 +2206,9 @@ img {
     }
 	.media-img img{
 		width: 80px;
+	}
+	.footer-contact a h5{
+		font-size: 17px;
 	}
 }
 
