@@ -296,13 +296,23 @@
 
 
 <script>
-  const input = document.querySelector("#phone");
-  const iti = window.intlTelInput(input, {
-    // separateDialCode: true,
-    initialCountry: "sa",
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/utils.js",
+  // Array of input element IDs
+  const phoneInputIds = ["phone"];
+
+  phoneInputIds.forEach(id => {
+    const input = document.querySelector(`#${id}`);
+    const iti = window.intlTelInput(input, {
+      initialCountry: "sa",
+      separateDialCode: true,
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+      autoPlaceholder: "off"
+    });
+
+    // Update placeholder dynamically on country change
+    input.addEventListener("countrychange", () => {
+      input.placeholder = "Enter your mobile number"; // Custom static placeholder
+    });
   });
-  window.iti = iti;
 </script>
 
 

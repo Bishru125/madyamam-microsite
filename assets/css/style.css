@@ -2172,6 +2172,9 @@ img {
 	.harmonios-main {
         padding: 60px 0px;
     }
+	.media-img img{
+		width: 80px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
