@@ -1129,14 +1129,14 @@ img {
 
 
   .check {
-    position: relative;
+	position: relative;
     width: 25px;
     height: 25px;
     border-radius: 7px;
     appearance: none;
-    background-color: transparent;
+    background-color: var(--primary-color);
     transition: all .3s;
-    border: 1.5px solid var(--primary-color);
+    border: 2px solid #ffffff;
    }
    
    .check::before {
@@ -1257,7 +1257,7 @@ img {
 	color: var(--white-color);
 	font-size: 20px;
 	font-weight: 300;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 /* form */
@@ -1356,6 +1356,14 @@ img {
 .summury-wrapper{
 	border: 1px solid var(--white-color);
 	padding: 8px;
+	margin-top: 63px;
+}
+
+.prom-code{
+	color: var(--white-color);
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom:10px;
 }
 
 .summury-input-box{
@@ -1935,8 +1943,13 @@ img {
 }
 
 @media only screen and (max-width: 991px) {
+	
+	.banner-content{
+		position: relative;
+		top: 400px;
+	}
 	.banner .gradient-text {
-        font-size: 30px;
+        font-size: 25px;
 		width: 90%;
     }
 	.gradient-text br{
@@ -1970,10 +1983,6 @@ img {
 	.register-btn{
 		justify-content: center;
 	}
-	.banner-content{
-		top: 55%;
-		width: auto;
-	}
 	
 	.terms-div{
 		text-align: center;
@@ -1984,7 +1993,7 @@ img {
 	.old-events-img-box{
 		height: 270px;
 	}
-	.banner-btns{
+	.sm-hide-btns{
 		display: none;
 	}
 	.header .logo{
