@@ -1948,6 +1948,8 @@ img {
 	}
 	.banner-img {
         width: 240px;
+		display: block;
+		margin: auto;
     }
 	
 	.media-img {

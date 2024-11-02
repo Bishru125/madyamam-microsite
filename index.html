@@ -686,6 +686,23 @@
 </script>
 
 
+<script>
+  // Check if the user is on a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const videoElement = document.getElementById("bannerVideo");
+
+  if (!isMobile) {
+    // Autoplay only on non-mobile devices
+    videoElement.autoplay = true;
+    videoElement.play();
+  } else {
+    // Pause the video on mobile devices
+    videoElement.pause();
+  }
+</script>
+
+
 </body>
 
 </html>
