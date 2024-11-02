@@ -2038,9 +2038,9 @@ img {
 		width: 100% !important;
 	}
 	.header .logo img{
-		width: 230px;
-		display: block;
-		margin: auto;
+		width: 200px;
+		/* display: block;
+		margin: auto; */
 	}
 	.green-bg, .red-bg, .pink-bg, .blue-bg{
 		animation: none;
