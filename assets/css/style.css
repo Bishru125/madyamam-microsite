@@ -2128,6 +2128,9 @@ img {
 		height: 100px;
 		width: 100px;
 	}
+	.banner-data{
+		gap: 5px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
