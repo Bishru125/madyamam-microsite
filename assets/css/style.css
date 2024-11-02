@@ -1292,6 +1292,11 @@ img {
     position: relative;
     display: block !important;
 }
+.iti__selected-country{
+	background-color: #E0E0E0 !important;
+	padding: 0px 5px !important;
+}
+
 
 /* intelinput */
 
