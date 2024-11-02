@@ -1796,6 +1796,20 @@ img {
 
       /*----------------- 404 ----------------- */
 
+	  .swal2-popup .swal2-buttonswrapper button{
+		line-height: 15px;
+		height: 45px;
+		padding: 0px 30px;
+		background-color: var(--primary-color) !important;
+		border: none;
+		color: var(--white-color) !important;
+		transition: 1s;
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		
+	  }
+
 
 
 
@@ -2203,6 +2217,10 @@ img {
 	.sub-wrapper img {
         width: 130px;
     }
+	.banner{
+		height: 80vh;
+	}
+	
 }
 
 @media only screen and (max-width: 425px) {
@@ -2227,12 +2245,19 @@ img {
 	.reg-partner {
         width: 220px;
     }
+	.banner-content {
+        top: 360px;
+    }
+	
 }
 
 @media only screen and (max-width: 375px) {
 	.banner-img {
         width: 220px;
     }
+	.banner{
+		height: 100vh;
+	}
 }
 
 @media only screen and (max-width: 350px) {
@@ -2248,5 +2273,11 @@ img {
     }
 	.counter-cntnt div {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	.custom-container {
+        padding: 0px 15px;
     }
 }
