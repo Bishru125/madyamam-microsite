@@ -44,3 +44,14 @@ function updateCountdown() {
 
 // media house
 
+
+
+
+// loader
+
+window.addEventListener("load", function() {
+  document.getElementById("loader-wrapper").style.display = "none";
+  document.getElementById("content").style.display = "block";
+});
+
+// loader
