@@ -1478,6 +1478,20 @@ img {
 	font-weight: 400;
 }
 
+.fixed-buttons{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	width: 100%;
+	background-color: #101010;
+	bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0px;
+}
+
 
 /* form */
 
@@ -1547,6 +1561,10 @@ img {
   .iti-flag {
 	background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
   }
+  .iti .iti__selected-dial-code{
+	font-size: 14px !important;
+    margin-left: 0px !important;
+	}
   
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 	  .iti-flag {
@@ -1718,8 +1736,6 @@ img {
 
 .register-btn{
 	display: flex;
-	align-items: center;
-	justify-content: end;
 	gap: 10px;
 	margin-top: 20px;
 }
@@ -2101,10 +2117,66 @@ img {
 		float: left;
 		left: 0;
 	  }
+
+
 	  
+/* privacy-policy */
 
 
+.privacy-policy-wrapper{
+	padding-top: 100px;
+}
 
+.privacy-policy-main{
+	width: 70%;
+	margin: auto;
+}
+
+.privacy-policy-main h4{
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--white-color);
+	margin-bottom: 30px;
+}
+.privacy-policy-main h5{
+	font-size: 28px;
+	font-weight: 500;
+	color: var(--primary-color);
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.privacy-policy-main h6{
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--white-color);
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.privacy-policy-main p{
+	color: #fff;
+}
+.privacy-policy-main ul{
+	list-style: none;
+	padding-left: 20px;
+}
+
+.privacy-policy-main ul li{
+	list-style-image: url(../img/arrow.svg);
+	color: var(--white-color);
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+.privacy-policy-main hr{
+    height: 2px;
+    margin: 30px 0px;
+    background: #fff;
+}
+
+.privacy-policy-main p span{
+	font-weight: 700;
+}
 
 /*----------------- responsive start ----------------- */
 @media only screen and (max-width: 1600px) {
@@ -2322,6 +2394,21 @@ img {
 	}
 	.green-bg, .red-bg, .pink-bg, .blue-bg{
 		animation: none;
+	}
+	.privacy-policy-main{
+		width: 100%;
+	}
+	.privacy-policy-main h4{
+		margin-bottom: 15px;
+		font-size: 28px;
+	}
+	.privacy-policy-main h5 {
+		font-size: 22px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	.privacy-policy-wrapper {
+		padding-top: 50px;
 	}
 }
 
