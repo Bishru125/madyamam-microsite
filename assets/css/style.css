@@ -2604,8 +2604,6 @@ body .modal-open {
 
 	.header .logo img {
 		width: 200px;
-		/* display: block;
-		margin: auto; */
 	}
 
 	.green-bg,
@@ -2636,6 +2634,14 @@ body .modal-open {
 	#collapseTickets .table-row .col-lg-4{
 		text-align: center !important;
 	}
+	.header {
+		flex-direction: column;
+		gap: 10px;
+		align-items: self-start;
+		justify-content: start;
+		width: 100%;
+	}
+
 }
 
 @media only screen and (max-width: 820px) {}
@@ -2784,11 +2790,7 @@ body .modal-open {
 		padding: 0px 30px;
 	}
 
-	.header {
-		flex-direction: column;
-		gap: 10px;
-	}
-
+	
 	.coming-dammam-cntnt h3 {
 		font-size: 35px;
 	}
