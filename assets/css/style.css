@@ -2545,6 +2545,7 @@ body .modal-open {
 		width: 240px;
 		display: block;
 		margin: auto;
+		padding-top: 30px;
 	}
 
 	.media-img {
