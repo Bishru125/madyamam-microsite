@@ -696,7 +696,7 @@ img {
   .marquee span {
 	will-change: transform;
 	transform: translateX(100%); /* Start outside of view */
-	animation: marquee 15s linear infinite;
+	animation: marquee 25s linear infinite;
 	font-size: 110px;
 	font-weight: 900;
 	-webkit-text-stroke-width: 2px;
