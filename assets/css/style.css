@@ -684,17 +684,6 @@ img {
 
 }
 
-
-@keyframes marquee {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
 .marquee {
 	display: flex;
 	align-items: center;
@@ -720,6 +709,16 @@ img {
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #404040;
 		line-height: normal;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
 	}
 }
 
