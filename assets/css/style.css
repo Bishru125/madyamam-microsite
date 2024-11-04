@@ -683,44 +683,37 @@ img {
 	margin-top: 30px;
 
 }
-
 .marquee {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
 	overflow: hidden;
 	position: relative;
-	z-index: 1;
 	text-transform: uppercase;
-
-
-
-	span {
-		text-transform: uppercase;
-		will-change: transform;
-		transform: translateX(0);
-		white-space: nowrap;
-		animation: marquee 24s linear infinite;
-		font-size: 110px;
-		background: transparent;
-		font-weight: 900;
-		color: transparent;
-		background: transparent;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: #404040;
-		line-height: normal;
-	}
-}
-
-@keyframes marquee {
+	white-space: nowrap;
+	z-index: 1;
+  }
+  
+  .marquee span {
+	will-change: transform;
+	transform: translateX(100%); /* Start outside of view */
+	animation: marquee 15s linear infinite;
+	font-size: 110px;
+	font-weight: 900;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #404040;
+	color: transparent;
+  }
+  
+  @keyframes marquee {
 	0% {
-		transform: translateX(0);
+	  transform: translateX(100%);
 	}
-
 	100% {
-		transform: translateX(-100%);
+	  transform: translateX(-100%);
 	}
-}
+  }
+
+
 
 /* Hello dammam */
 
