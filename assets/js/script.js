@@ -122,3 +122,40 @@ inputs.forEach((input, index) => {
 
 
 // otp
+
+
+
+
+// collaps
+
+// Toggle collapse on #success button click
+document.querySelector('#success').addEventListener('click', function(event) {
+    const collapseContent = document.querySelector('#collapseTickets');
+    const isCollapsed = collapseContent.style.display === 'none' || !collapseContent.style.display;
+  
+    // Toggle visibility of the collapsible content
+    if (isCollapsed) {
+      collapseContent.style.display = 'block';
+      this.classList.add('active'); // Add active class to button
+    } else {
+      collapseContent.style.display = 'none';
+      this.classList.remove('active'); // Remove active class to button
+    }
+  
+    // Prevent click event from propagating to document
+    event.stopPropagation();
+  });
+  
+  // Close collapseTickets when clicking outside of it
+  document.addEventListener('click', function(event) {
+    const collapseContent = document.querySelector('#collapseTickets');
+    const successButton = document.querySelector('#success');
+  
+    // Check if the click is outside of collapseContent and successButton
+    if (!collapseContent.contains(event.target) && !successButton.contains(event.target)) {
+      collapseContent.style.display = 'none';
+      successButton.classList.remove('active'); // Remove active class from button
+    }
+  });
+
+// collaps
