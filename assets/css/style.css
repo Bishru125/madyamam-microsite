@@ -1919,8 +1919,8 @@ body .modal-open {
 }
 
 .upgrade-btn {
-	background-color: #39B663;
-	border: 1px solid #39B663;
+	background-color: #39B663 !important;
+	border: 1px solid #39B663 !important;
 }
 
 .upgrade-btn svg {
@@ -2286,6 +2286,64 @@ body .modal-open {
 .privacy-policy-main p span {
 	font-weight: 700;
 }
+
+/* privacy-policy */
+
+
+
+/* qr-page */
+
+.qr-main-wrapper{
+	padding-top: 80px;
+}
+
+.qr-box{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid var(--primary-color);
+	padding: 30px 20px;
+	color: var(--white-color);
+}
+
+.qr-box h5{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.qr-box h6{
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.qr-box h6 span{
+	color: var(--primary-color);
+	margin-right: 5px;
+}
+
+.qr-box img{
+	width: 100px;
+	margin:  auto;
+}
+
+.qr-box-img{
+	background: var(--white-color);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.qr-box .download-btn{
+    background-color: #39B54A;
+	border: 1px solid#39B54A;
+}
+
+.qr-box .download-btn:hover{
+	background: transparent;
+}
+
+
 
 /*----------------- responsive start ----------------- */
 @media only screen and (max-width: 1600px) {
