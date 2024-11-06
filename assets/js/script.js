@@ -63,10 +63,9 @@ window.addEventListener("load", function() {
 const inputs = document.querySelectorAll('.otp-input input');
 const timerDisplay = document.getElementById('timer');
 const resendButton = document.getElementById('resendButton');
-let timeLeft = 180;
+let timeLeft = 180; // 3 minutes in seconds
 let timerId;
 
-// Start Timer function
 function startTimer() {
     timerId = setInterval(() => {
         if (timeLeft <= 0) {
@@ -83,8 +82,8 @@ function startTimer() {
     }, 1000);
 }
 
-// Resend OTP function
 function resendOTP() {
+    // Here you would typically call your backend to resend the OTP
     alert("New OTP sent!");
     timeLeft = 180;
     inputs.forEach(input => {
@@ -97,25 +96,25 @@ function resendOTP() {
     startTimer();
 }
 
-// Adjusted input handling
 inputs.forEach((input, index) => {
     input.addEventListener('input', (e) => {
-        // Only allow one character
-        e.target.value = e.target.value.slice(0, 1);
-
-        // Automatically move to next input if there's a value
-        if (e.target.value && index < inputs.length - 1) {
-            inputs[index + 1].focus();
+        if (e.target.value.length > 1) {
+            e.target.value = e.target.value.slice(0, 1);
+        }
+        if (e.target.value.length === 1) {
+            if (index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
         }
     });
 
     input.addEventListener('keydown', (e) => {
-        if (e.key === 'Backspace' && !e.target.value && index > 0) {
-            inputs[index - 1].focus();
+        if (e.key === 'Backspace' && !e.target.value) {
+            if (index > 0) {
+                inputs[index - 1].focus();
+            }
         }
-
-        // Prevent typing of 'e' to avoid exponential input in some browsers
-        if (e.key === 'e' || e.key === 'E') {
+        if (e.key === 'e') {
             e.preventDefault();
         }
     });
