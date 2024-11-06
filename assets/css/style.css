@@ -1865,6 +1865,9 @@ body .modal-open {
 .otp-inputs {
 	margin-top: 10px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
 
 }
 
