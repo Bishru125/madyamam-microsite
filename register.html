@@ -18,6 +18,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/css/intlTelInput.css" />
 </head>
 
+<style>
+  .modal-open {
+  overflow: hidden !important;
+}
+</style>
+
 <body>
 
 
@@ -589,7 +595,7 @@ REGISTRATION PARTNER
     </div>
   </section>
 
-  <div class="register-btn fixed-buttons" >
+  <div class="register-btn fixed-buttons" id="fixedButtons" >
     <a href="select-ticket.html"><button class="primary-btn "><span class="text">Cancel</span><span>Cancel</span></button></a>
     <button type="button" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#submitModal">Submit</button>
   </div>
@@ -700,6 +706,27 @@ REGISTRATION PARTNER
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/intlTelInput.js"></script>
 
   <script>
+    // Select the footer and fixed buttons elements
+    const footer = document.querySelector('.footer');
+    const fixedButtons = document.getElementById('fixedButtons');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // Hide fixed buttons when the footer is in view
+        if (entry.isIntersecting) {
+          fixedButtons.classList.add('hidden');
+        } else {
+          fixedButtons.classList.remove('hidden');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Observe the footer element
+    observer.observe(footer);
+  </script>
+
+  <script>
     const lenis = new Lenis();
 
     let isScrolling = false;
@@ -724,6 +751,26 @@ REGISTRATION PARTNER
 
     requestAnimationFrame(raf);
   </script>
+
+  <script>
+    document.getElementById('successModal').addEventListener('shown.bs.modal', function () {
+  document.body.style.overflow = 'hidden'; // Disable background scroll
+});
+
+document.getElementById('successModal').addEventListener('hidden.bs.modal', function () {
+  document.body.style.overflow = ''; // Re-enable background scroll
+});
+  </script>
+
+<script>
+  document.getElementById('submitModal').addEventListener('shown.bs.modal', function () {
+document.body.style.overflow = 'hidden'; // Disable background scroll
+});
+
+document.getElementById('submitModal').addEventListener('hidden.bs.modal', function () {
+document.body.style.overflow = ''; // Re-enable background scroll
+});
+</script>
 
 
   <script>

@@ -17,6 +17,8 @@
   <link rel="icon" href="assets/img/fav-icon.png" type="image/png">
 </head>
 
+
+
 <body>
 
 
@@ -301,10 +303,7 @@
 
       
     </div>
-    <div class="ticket-btns fixed-buttons">
-      <a href="index.html"><button class="primary-btn"><span class="text">Cancel</span><span>Cancel</span></button></a>
-      <a href="register.html"><button class="secondary-btn">Proceed</button></a>
-    </div>
+  
   </div>
 </section>
 
@@ -444,7 +443,10 @@ REGISTRATION PARTNER
     </div>
   </section>
 
-
+  <div class="ticket-btns fixed-buttons" id="fixedButtons"> 
+    <a href="index.html"><button class="primary-btn"><span class="text">Cancel</span><span>Cancel</span></button></a>
+    <a href="register.html"><button class="secondary-btn">Proceed</button></a>
+  </div>
 
 
 
@@ -489,6 +491,27 @@ REGISTRATION PARTNER
     }
 
     requestAnimationFrame(raf);
+  </script>
+
+  <script>
+    // Select the footer and fixed buttons elements
+    const footer = document.querySelector('.footer');
+    const fixedButtons = document.getElementById('fixedButtons');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // Hide fixed buttons when the footer is in view
+        if (entry.isIntersecting) {
+          fixedButtons.classList.add('hidden');
+        } else {
+          fixedButtons.classList.remove('hidden');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Observe the footer element
+    observer.observe(footer);
   </script>
 
 
